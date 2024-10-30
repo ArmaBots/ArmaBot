@@ -1,9 +1,5 @@
-import {generateWAMessageFromContent} from "baileys";
+import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
 import * as fs from 'fs';
-// Para configurar o idioma, na raiz do projeto altere o arquivo config.json
-// Para configurar el idioma, en la raíz del proyecto, modifique el archivo config.json.
-// To set the language, in the root of the project, modify the config.json file.
-
 const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
   try {
     const users = participants.map((u) => conn.decodeJid(u.id));
@@ -12,9 +8,6 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
     const msg = conn.cMod(m.chat, generateWAMessageFromContent(m.chat, {[m.quoted ? q.mtype : 'extendedTextMessage']: m.quoted ? c.message[q.mtype] : {text: '' || c}}, {quoted: m, userJid: conn.user.id}), text || q.text, conn.user.jid, {mentions: users});
     await conn.relayMessage(m.chat, msg.message, {messageId: msg.key.id});
   } catch {
-    /**
-[ By @NeKosmic || https://github.com/NeKosmic/ ]
-**/
 
     const users = participants.map((u) => conn.decodeJid(u.id));
     const quoted = m.quoted ? m.quoted : m;
@@ -35,11 +28,11 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
       var mediax = await quoted.download?.();
       conn.sendMessage(m.chat, {sticker: mediax, mentions: users}, {quoted: m});
     } else {
-      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl: md}}}}}, {});
+      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl: 'https://whatsapp.com/channel/0029Vak6H9l3GJP4FJH5063R'}}}}}, {});
     }
   }
 };
-handler.command = /^(hidetag|noti|notify|n|aviso)$/i;
+handler.command = /^(hidetag|notify|notificar|noti|n|hidetah|hidet)$/i;
 handler.group = true;
 handler.admin = true;
 export default handler;
