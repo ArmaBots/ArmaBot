@@ -1,0 +1,22 @@
+
+
+const handler = async (m, {conn}) => {
+  const datas = global
+  const idioma = datas.db.data.users[m.sender].language
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/es.json`))
+  const tradutor = _translate.plugins.fun_verdad
+
+  global.verdad = tradutor.texto3;
+
+  conn.reply(m.chat, `*┌────「 𝚅𝙴𝚁𝙳𝙰𝙳 」─*\n*“${pickRandom(global.verdad)}”*\n*└────「 ${global.packname} 」─*`, m);
+};
+handler.help = ['verdad'];
+handler.tags = ['fun'];
+handler.command = /^verdad/i;
+export default handler;
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())];
+}
+
+
