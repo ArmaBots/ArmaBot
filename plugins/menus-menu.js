@@ -124,6 +124,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
 ┃➺ _${usedPrefix}4vs4_
 ┃➺ _${usedPrefix}6vs6_
 ┃➺ _${usedPrefix}6vs6MX_
+┃➺ _${usedPrefix}6vs6MIX_
 ┃➺ _${usedPrefix}8vs8_
 ┃➺ _${usedPrefix}12vs12_
 ┃➺ _${usedPrefix}16vs16_
