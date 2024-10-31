@@ -70,6 +70,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
 ╭━━━━━ • ◆ • ━━━━━╮
 ┃➺ _${usedPrefix}menuaudios🔊_
 ┃➺ _${usedPrefix}menuanimes🖥️_
+┃➺ _${usedPrefix}games_
 ┃➺ _${usedPrefix}glx🌠_
 ╰━━━━━ • ◆ • ━━━━━╯
  
