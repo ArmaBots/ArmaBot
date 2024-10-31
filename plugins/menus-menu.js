@@ -176,8 +176,8 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
 ┃➺ _${usedPrefix}glx (RPG Mundo)_
 ┃➺ _${usedPrefix}follar *<@tag>*_
 ┃➺ _${usedPrefix}violar *<@tag>*_
-┃➺ _${usedPrefix}69 *<@tag>*_
 ┃➺ _${usedPrefix}anal *<@tag>*_
+┃🔥 _!69 *<responder / @tag>*_
 ╰━━━━━ • ◆ • ━━━━━╯
 
 *··················································*
