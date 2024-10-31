@@ -107,7 +107,7 @@ const document = doc[Math.floor(Math.random() * doc.length)];
     conn.reply(m.chat, '*🍨 Error Al Enviar!.*', m);
   }
 };
-handler.command = ['juegosmenu','games','juegos','menujuegos']
+handler.command = ['j']
 handler.register = true
 handler.exp = 50;
 handler.fail = null;
