@@ -153,6 +153,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
 ┃➺ _${usedPrefix}puta *<nombre / @tag>*_
 ┃➺ _${usedPrefix}follar <@tag>_
 ┃➺ _${usedPrefix}69 <@tag>_
+┃➺ _${usedPrefix}anal <@tag>_
 ┃➺ _${usedPrefix}manco *<nombre / @tag>*_
 ┃➺ _${usedPrefix}manca *<nombre / @tag>*_
 ┃➺ _${usedPrefix}rata *<nombre / @tag>*_
