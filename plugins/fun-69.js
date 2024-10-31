@@ -5,7 +5,7 @@ import path from 'path';
 
 let handler = async (m, { conn, usedPrefix }) => {
     let who;
-    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false;
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : true;
     else who = m.chat;
     if (!db.data.chats[m.chat].nsfw && m.isGroup) return m.reply('🚩 *¡Estos comandos están desactivados!*');
     if (!who) throw 'Etiqueta o menciona a alguien';
@@ -36,7 +36,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 }
 
 handler.help = ['69 @tag'];
-handler.tags = [''];
+handler.tags = ['fun'];
 handler.command = ['sixnine','69'];
 handler.group = true;
 
